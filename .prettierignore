@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+.env
+project.zip
+project.vf
+build
+project_unzipped/
+.pnp.*
+.yarn/*
