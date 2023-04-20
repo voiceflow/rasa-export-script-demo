@@ -85,11 +85,6 @@ async function main() {
           responses = nextStep.data.dialogs.map((dialog) => dialog.content);
         }
 
-        console.dir(
-          intent.slots.map((slot) => slotMap.get(slot.id)),
-          { depth: null }
-        );
-
         rasaIntent = voiceflowToRasaIntent(intent, slotMap, responses);
 
         const [response] = responses;
